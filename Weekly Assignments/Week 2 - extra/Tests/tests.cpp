@@ -88,7 +88,7 @@ TEST(test, e_allocateVeterinarians){
     z1.addAnimal(a5);
 
     //TODO write the correct path file
-    ifstream fVet("vets.txt");
+    ifstream fVet("../Tests/vets.txt");
     if (!fVet) cerr << "File does not exist!\n";
     else z1.allocateVeterinarians(fVet);
     fVet.close();
@@ -114,7 +114,7 @@ TEST(test, f_removeVeterinary){
     z1.addAnimal(a5);
 
     //TODO  write the correct path file
-    ifstream fVet("vets.txt");
+    ifstream fVet("../Tests/vets.txt");
     if (!fVet) cerr << "File does not exist!\n";
     else z1.allocateVeterinarians(fVet);
     fVet.close();
